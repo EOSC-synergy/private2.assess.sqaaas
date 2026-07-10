@@ -1,0 +1,83 @@
+config:
+  credentials:
+  - id: https://github.com/PalomoIFCA/private2
+    password_var: GIT_PASSWORD
+    username_var: GIT_USER
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: fix/updatego
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/PalomoIFCA/private2:
+      branch: main
+      credential_tmp: true
+      credentials_id: https://github.com/PalomoIFCA/private2
+      repo: https://github.com/PalomoIFCA/private2
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/PalomoIFCA/private2 git:
+        commands:
+        - /usr/bin/env sh .sqa/script.sage_proactive_phoenix.sh
+        container: qc.acc_coral_mysterious_moth
+  QC.Doc:
+    repos:
+      github.com/PalomoIFCA/private2 find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.rust_bold_rhinoceros.sh
+        container: qc.doc_alabaster_wise_chinchilla
+      github.com/PalomoIFCA/private2 git:
+        commands:
+        - /usr/bin/env sh .sqa/script.mulberry_helpful_meerkat.sh
+        container: qc.doc_obsidian_sad_chinchilla
+      github.com/PalomoIFCA/private2 markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.seafoam_decisive_newt.sh
+        container: qc.doc_flax_creative_phoenix
+  QC.Lic:
+    repos:
+      github.com/PalomoIFCA/private2 licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.harlequin_dramatic_reindeer.sh
+        container: qc.lic_vermilion_melancholy_roc
+  QC.Met:
+    repos:
+      github.com/PalomoIFCA/private2 cff-converter-python:
+        commands:
+        - /usr/bin/env sh .sqa/script.chili_innocent_chinchilla.sh
+        container: qc.met_saffron_clever_cobra
+  QC.Sec:
+    repos:
+      github.com/PalomoIFCA/private2 bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.maroon_vigilant_moose.sh
+        container: qc.sec_jet_pensive_frog
+  QC.Sty:
+    repos:
+      github.com/PalomoIFCA/private2 flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.fandango_open_elk.sh
+        container: qc.sty_fern_analytical_salamander
+      github.com/PalomoIFCA/private2 hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.mint_alert_marmoset.sh
+        container: qc.sty_forest_imaginative_chinchilla
+      github.com/PalomoIFCA/private2 jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.cloud_cheerful_jaguar.sh
+        container: qc.sty_pistachio_mischievous_hummingbird
+  QC.Uni:
+    repos:
+      github.com/PalomoIFCA/private2 pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.violet_bubbly_cormorant.sh
+        container: qc.uni_smoke_understanding_camel
+  QC.Ver:
+    repos:
+      github.com/PalomoIFCA/private2 get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.red_mischievous_hippopotamus.sh
+        container: qc.ver_azure_kind_raccoon
+timeout: 5400
