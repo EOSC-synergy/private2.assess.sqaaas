@@ -1,8 +1,5 @@
 config:
-  credentials:
-  - id: https://github.com/PalomoIFCA/private2
-    password_var: GIT_PASSWORD
-    username_var: GIT_USER
+  credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: fix/updatego
@@ -10,7 +7,6 @@ config:
     github.com/PalomoIFCA/private2:
       branch: main
       credential_tmp: true
-      credentials_id: https://github.com/PalomoIFCA/private2
       repo: https://github.com/PalomoIFCA/private2
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -20,64 +16,64 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/private2 git:
         commands:
-        - /usr/bin/env sh .sqa/script.chestnut_wondrous_parrot.sh
-        container: qc.acc_indigo_optimistic_seal
+        - /usr/bin/env sh .sqa/script.cadet_adaptable_orca.sh
+        container: qc.acc_beige_cheerful_jellyfish
   QC.Doc:
     repos:
       github.com/PalomoIFCA/private2 find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.peach_dedicated_quokka.sh
-        container: qc.doc_vermilion_vigilant_echidna
+        - /usr/bin/env sh .sqa/script.apricot_imaginative_leopard.sh
+        container: qc.doc_jet_bold_ibex
       github.com/PalomoIFCA/private2 git:
         commands:
-        - /usr/bin/env sh .sqa/script.avocado_nurturing_gull.sh
-        container: qc.doc_gray_anxious_parrot
+        - /usr/bin/env sh .sqa/script.onyx_grumpy_piranha.sh
+        container: qc.doc_marina_tough_fox
       github.com/PalomoIFCA/private2 markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.mahogany_daring_turtle.sh
-        container: qc.doc_peony_brilliant_tiger
+        - /usr/bin/env sh .sqa/script.seafoam_anxious_hydra.sh
+        container: qc.doc_pearl_shy_buffalo
   QC.Lic:
     repos:
       github.com/PalomoIFCA/private2 licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.wine_savvy_frog.sh
-        container: qc.lic_moss_focused_termite
+        - /usr/bin/env sh .sqa/script.moss_philosophical_sparrow.sh
+        container: qc.lic_echelon_silly_caribou
   QC.Met:
     repos:
       github.com/PalomoIFCA/private2 cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.byzantium_radiant_kingfisher.sh
-        container: qc.met_lavender_unique_kookaburra
+        - /usr/bin/env sh .sqa/script.prussian_creative_gibbon.sh
+        container: qc.met_scarlet_impulsive_donkey
   QC.Sec:
     repos:
       github.com/PalomoIFCA/private2 bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.burgundy_observant_tapir.sh
-        container: qc.sec_maroon_clever_toad
+        - /usr/bin/env sh .sqa/script.gamboge_reflective_impala.sh
+        container: qc.sec_grape_carefree_roadrunner
   QC.Sty:
     repos:
       github.com/PalomoIFCA/private2 flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.espresso_sincere_okapi.sh
-        container: qc.sty_silver_playful_tortoise
+        - /usr/bin/env sh .sqa/script.lilac_grateful_frog.sh
+        container: qc.sty_isabelline_adaptable_alpaca
       github.com/PalomoIFCA/private2 hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.polar_dreamy_reindeer.sh
-        container: qc.sty_eggplant_audacious_hippopotamus
+        - /usr/bin/env sh .sqa/script.porcelain_supportive_puffin.sh
+        container: qc.sty_malachite_jubilant_marmoset
       github.com/PalomoIFCA/private2 jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.mint_rugged_marmoset.sh
-        container: qc.sty_apricot_determined_roadrunner
+        - /usr/bin/env sh .sqa/script.plum_passionate_quail.sh
+        container: qc.sty_crimson_reckless_tarantula
   QC.Uni:
     repos:
       github.com/PalomoIFCA/private2 pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.azure_bright_jellyfish.sh
-        container: qc.uni_sand_generous_baboon
+        - /usr/bin/env sh .sqa/script.mulberry_nurturing_walrus.sh
+        container: qc.uni_lilac_fair_marmoset
   QC.Ver:
     repos:
       github.com/PalomoIFCA/private2 get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.violet_logical_swan.sh
-        container: qc.ver_poppy_resilient_ferret
+        - /usr/bin/env sh .sqa/script.cherry_foolish_falcon.sh
+        container: qc.ver_cayenne_plucky_frog
 timeout: 5400
