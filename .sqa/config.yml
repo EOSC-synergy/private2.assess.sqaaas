@@ -1,8 +1,8 @@
 config:
   credentials:
   - id: https://github.com/PalomoIFCA/private2
-    password_var: gAAAAABqYGo4kotiPQ5vaxyBkvi9jCFujCuJyw-ncGk9ODinMcyRXnSxzHR9yeztjM032JJBR1Drg_YeFjnB2oBKuPvhxxfO8HGFINaAtksfCjpjdPOWW7OXGJf1I-ufmtw-lk9g-wkl
-    username_var: gAAAAABqYGo4QfA1PqlpdaRgRw4Ph1zII-ZbodjV9PVv6Dk5VK6w9x9wEFBvPyIVhmZRP777LuERgATtHFyH3-ODj9pxgBcSMA==
+    password_var: GIT_PASSWORD
+    username_var: GIT_USER
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: fix/updatego
@@ -20,64 +20,64 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/private2 git:
         commands:
-        - /usr/bin/env sh .sqa/script.tundra_curious_cormorant.sh
-        container: qc.acc_chocolate_playful_buffalo
+        - /usr/bin/env sh .sqa/script.dawn_romantic_hippopotamus.sh
+        container: qc.acc_ivory_zealous_stingray
   QC.Doc:
     repos:
       github.com/PalomoIFCA/private2 find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.peony_open_sparrow.sh
-        container: qc.doc_maroon_cautious_angelfish
+        - /usr/bin/env sh .sqa/script.plum_polite_moth.sh
+        container: qc.doc_lagoon_tactful_stingray
       github.com/PalomoIFCA/private2 git:
         commands:
-        - /usr/bin/env sh .sqa/script.carmine_spontaneous_llama.sh
-        container: qc.doc_clove_skeptical_lemur
+        - /usr/bin/env sh .sqa/script.onyx_artistic_leopard.sh
+        container: qc.doc_sand_rugged_baboon
       github.com/PalomoIFCA/private2 markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.harlequin_dizzy_cougar.sh
-        container: qc.doc_salmon_funny_baboon
+        - /usr/bin/env sh .sqa/script.rosewater_carefree_newt.sh
+        container: qc.doc_banana_rugged_gazelle
   QC.Lic:
     repos:
       github.com/PalomoIFCA/private2 licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.lagoon_unique_crow.sh
-        container: qc.lic_cherry_playful_walrus
+        - /usr/bin/env sh .sqa/script.eggplant_clever_kirin.sh
+        container: qc.lic_cornflower_amiable_alligator
   QC.Met:
     repos:
       github.com/PalomoIFCA/private2 cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.mustard_organized_opossum.sh
-        container: qc.met_chartreuse_vibrant_wolf
+        - /usr/bin/env sh .sqa/script.bronze_tranquil_giraffe.sh
+        container: qc.met_nutmeg_vigilant_frog
   QC.Sec:
     repos:
       github.com/PalomoIFCA/private2 bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.butter_delighted_seahorse.sh
-        container: qc.sec_heather_humorous_kraken
+        - /usr/bin/env sh .sqa/script.coffee_alert_otter.sh
+        container: qc.sec_clove_vigilant_lemur
   QC.Sty:
     repos:
       github.com/PalomoIFCA/private2 flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.lime_open_cougar.sh
-        container: qc.sty_cyan_silly_dragon
+        - /usr/bin/env sh .sqa/script.smoke_ardent_reindeer.sh
+        container: qc.sty_emerald_amiable_cheetah
       github.com/PalomoIFCA/private2 hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.paprika_calm_pegasus.sh
-        container: qc.sty_aqua_grumpy_frog
+        - /usr/bin/env sh .sqa/script.azure_cranky_condor.sh
+        container: qc.sty_obsidian_stoic_lemur
       github.com/PalomoIFCA/private2 jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cinnabar_patient_bat.sh
-        container: qc.sty_cobalt_zealous_chipmunk
+        - /usr/bin/env sh .sqa/script.lavender_sociable_dragonfly.sh
+        container: qc.sty_cherry_spontaneous_lionfish
   QC.Uni:
     repos:
       github.com/PalomoIFCA/private2 pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.ruby_silly_cobra.sh
-        container: qc.uni_mulberry_sad_camel
+        - /usr/bin/env sh .sqa/script.glaucous_frugal_badger.sh
+        container: qc.uni_teal_warm_owl
   QC.Ver:
     repos:
       github.com/PalomoIFCA/private2 get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.chili_understanding_kangaroo.sh
-        container: qc.ver_gold_scrappy_hedgehog
+        - /usr/bin/env sh .sqa/script.butter_daring_nighthawk.sh
+        container: qc.ver_butterscotch_nervous_termite
 timeout: 5400
