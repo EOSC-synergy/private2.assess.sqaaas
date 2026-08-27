@@ -20,64 +20,64 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/private2 git:
         commands:
-        - /usr/bin/env sh .sqa/script.copper_relaxed_wolf.sh
-        container: qc.acc_iris_tolerant_roadrunner
+        - /usr/bin/env sh .sqa/script.tangerine_unique_kraken.sh
+        container: qc.acc_cadet_responsible_finch
   QC.Doc:
     repos:
       github.com/PalomoIFCA/private2 find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.silver_melancholy_horse.sh
-        container: qc.doc_currant_shrewd_thrush
+        - /usr/bin/env sh .sqa/script.periwinkle_thankful_boa.sh
+        container: qc.doc_chocolate_blissful_whale
       github.com/PalomoIFCA/private2 git:
         commands:
-        - /usr/bin/env sh .sqa/script.raven_optimistic_walrus.sh
-        container: qc.doc_olive_sincere_clownfish
+        - /usr/bin/env sh .sqa/script.thistle_confused_rabbit.sh
+        container: qc.doc_hunter_peaceful_gerbil
       github.com/PalomoIFCA/private2 markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.thunder_humorous_termite.sh
-        container: qc.doc_forest_driven_raven
+        - /usr/bin/env sh .sqa/script.yellow_thankful_shark.sh
+        container: qc.doc_linen_grateful_panther
   QC.Lic:
     repos:
       github.com/PalomoIFCA/private2 licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.papaya_perceptive_narwhal.sh
-        container: qc.lic_pumpkin_exuberant_chipmunk
+        - /usr/bin/env sh .sqa/script.ultramarine_tranquil_catfish.sh
+        container: qc.lic_avocado_dizzy_donkey
   QC.Met:
     repos:
       github.com/PalomoIFCA/private2 cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.pumpkin_careful_sloth.sh
-        container: qc.met_porcelain_assured_hawk
+        - /usr/bin/env sh .sqa/script.eggplant_impulsive_chinchilla.sh
+        container: qc.met_celadon_tactful_dingo
   QC.Sec:
     repos:
       github.com/PalomoIFCA/private2 bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.aquamarine_mysterious_fox.sh
-        container: qc.sec_magenta_supportive_albatross
+        - /usr/bin/env sh .sqa/script.iris_calm_crow.sh
+        container: qc.sec_persimmon_independent_mink
   QC.Sty:
     repos:
       github.com/PalomoIFCA/private2 flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.ebony_fearless_kirin.sh
-        container: qc.sty_tangerine_foolish_newt
+        - /usr/bin/env sh .sqa/script.chili_timid_vulture.sh
+        container: qc.sty_mauve_polite_goose
       github.com/PalomoIFCA/private2 hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.horizon_practical_axolotl.sh
-        container: qc.sty_clove_humorous_koala
+        - /usr/bin/env sh .sqa/script.cinnabar_happy_turkey.sh
+        container: qc.sty_lavender_warm_walrus
       github.com/PalomoIFCA/private2 jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.flax_devoted_okapi.sh
-        container: qc.sty_dusk_ambitious_ibis
+        - /usr/bin/env sh .sqa/script.gamboge_sarcastic_iguana.sh
+        container: qc.sty_jasmine_confused_leopard
   QC.Uni:
     repos:
       github.com/PalomoIFCA/private2 pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.snow_bubbly_crow.sh
-        container: qc.uni_cinnabar_studious_roadrunner
+        - /usr/bin/env sh .sqa/script.teal_thankful_hornbill.sh
+        container: qc.uni_walnut_spirited_flounder
   QC.Ver:
     repos:
       github.com/PalomoIFCA/private2 get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.tan_industrious_orangutan.sh
-        container: qc.ver_teal_tactful_frog
+        - /usr/bin/env sh .sqa/script.ruby_playful_vulture.sh
+        container: qc.ver_plum_realistic_wolf
 timeout: 5400
